@@ -33,7 +33,7 @@ RUN ["/bin/bash", "-c", "debconf-set-selections <<< 'mysql-server mysql-server/r
 RUN apt-get -y install mysql-server
 
 RUN apt-get -y install mysql-client
-RUN sed -i '/h2database/c\libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.24"' build.sbt
+RUN sed -i '/h2database/c\libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.24"' /home/build.sbt
 CMD sbt run
 
 
