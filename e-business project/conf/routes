@@ -1,0 +1,34 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.ProductController.index
+POST    /addproduct                 controllers.ProductController.addProduct
+GET     /products                   controllers.ProductController.getProducts
+GET     /categories                 controllers.CategoryController.getCategories
+GET     /category                   controllers.CategoryController.index
+POST    /addcategory                controllers.CategoryController.addCategory
+GET     /basketa                    controllers.BasketaController.getBasketa
+GET     /basket                     controllers.BasketaController.index
+POST    /addbasketid                controllers.BasketaController.addBasketId
+GET     /getbasketproducts          controllers.BasketProductController.getBasketProducts
+GET     /basketproduct              controllers.BasketProductController.index
+POST    /addbasketproduct           controllers.BasketProductController.addBasketProduct
+GET     /getopinions                controllers.OpinionsController.getOpinions
+GET     /opinions                   controllers.OpinionsController.index
+POST    /addopinion                 controllers.OpinionsController.addOpinion
+GET     /payments                   controllers.PaymentController.getPayments
+GET     /payment                    controllers.PaymentController.index
+POST    /addpayment                 controllers.PaymentController.addPayment
+GET     /keywords                   controllers.KeywordController.getKeywords
+GET     /keyword                    controllers.KeywordController.index
+POST    /addkeyword                 controllers.KeywordController.addKeyword
+GET     /getorders                  controllers.OrdersController.getOrders
+GET     /orders                     controllers.OrdersController.index
+POST    /addorders                  controllers.OrdersController.addOrder
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

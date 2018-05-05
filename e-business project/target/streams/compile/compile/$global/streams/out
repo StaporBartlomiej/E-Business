@@ -1,0 +1,22 @@
+[error] /home/linuxlite/IdeaProjects/e-business/app/models/OpinionsRepository.scala:38:26: not found: type Opinions
+[error]   def list(): Future[Seq[Opinions]] = db.run {
+[error]                          ^
+[error] /home/linuxlite/IdeaProjects/e-business/app/models/OpinionsRepository.scala:11:97: not found: type ProductRepository
+[error] class OpinionsRepository @Inject()(dbConfigProvider: DatabaseConfigProvider, productRepository: ProductRepository)(implicit ec: ExecutionContext) {
+[error]                                                                                                 ^
+[error] /home/linuxlite/IdeaProjects/e-business/app/models/OpinionsRepository.scala:19:39: not found: type ProductTable
+[error]   private val product_id = TableQuery[ProductTable]
+[error]                                       ^
+[error] /home/linuxlite/IdeaProjects/e-business/app/models/OpinionsRepository.scala:21:55: not found: type Opinions
+[error]   private class OpinionsTable(tag: Tag) extends Table[Opinions](tag, "opinions") {
+[error]                                                       ^
+[error] /home/linuxlite/IdeaProjects/e-business/app/models/OpinionsRepository.scala:29:37: not found: value Opinions
+[error]     def * = (product, opinion) <> ((Opinions.apply _).tupled, Opinions.unapply)
+[error]                                     ^
+[error] /home/linuxlite/IdeaProjects/e-business/app/models/OpinionsRepository.scala:29:63: not found: value Opinions
+[error]     def * = (product, opinion) <> ((Opinions.apply _).tupled, Opinions.unapply)
+[error]                                                               ^
+[error] /home/linuxlite/IdeaProjects/e-business/app/models/OpinionsRepository.scala:35:23: not found: value Opinions
+[error]     db.run(opinion += Opinions(product, opinionxd))
+[error]                       ^
+[error] 7 errors found
