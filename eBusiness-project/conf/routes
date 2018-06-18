@@ -1,0 +1,46 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Products
+POST        /addproduct                     controllers.ProductController.addProduct
+GET         /products                       controllers.ProductController.getProducts
+GET         /product/:id                    controllers.ProductController.getProduct(id: Int)
+#GET         /products/key                   controllers.ProductController.getProductsByKeyWords
+
+# Comments
+#GET         /opinions/:id                   controllers.OpinionsController.getOpinions(id: Int)
+#POST        /addopinion                     controllers.OpinionsController.addOpinions()
+
+# Reservations
+POST        /addreservations                     controllers.ReservationsController.addReservations()
+GET         /getresevation                      controllers.ReservationsController.getReservations
+GET         /getreservations/:id                  controllers.ReservationsController.getReservationsByUser(id: Int)
+
+## Map static resources from the /public folder to the /assets URL path
+#GET         /assets/*file         controllers.Assets.versioned(path="/public", file: Asset)
+
+# Category
+POST        /addcategory                    controllers.CategoryController.addCategory
+
+# Cart
+GET       /usercart/:id                       controllers.CartControllers.getCart(id: String)
+POST        /addcart                        controllers.ApplicationController.addCart()
+
+# Home page
+GET         /                               controllers.ApplicationController.index
+GET         /signOut                        controllers.ApplicationController.signOut
+GET         /authenticate/:provider         controllers.SocialAuthController.authenticate(provider)
+
+GET         /currency_user                  controllers.ApplicationController.getCurrencyUser
+GET         /users                          controllers.ApplicationController.getUsers
+
+GET         /signIn                         controllers.SignInController.view
+POST        /signIn                         controllers.SignInController.submit
+
+GET         /account/email/:email           controllers.ActivateAccountController.send(email: String)
+GET         /account/activate/:token        controllers.ActivateAccountController.activate(token: java.util.UUID)
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file                   controllers.Assets.versioned(file)
+->          /webjars                        webjars.Routes

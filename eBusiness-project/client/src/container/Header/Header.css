@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
+.title-cart-box {
+  margin-top: 50px; }
+  .title-cart-box .col-lg-12 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .title-cart-box .col-lg-12 #title {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .title-cart-box .col-lg-12 #title img {
+        max-height: 130px; }
+      .title-cart-box .col-lg-12 #title h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        color: #777777;
+        margin: 0 0 0 20px; }
+    .title-cart-box .col-lg-12 #user {
+      display: flex;
+      align-items: center; }
+      .title-cart-box .col-lg-12 #user img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        align-items: right; }
+        .title-cart-box .col-lg-12 #user img i {
+          color: #ffffff; }
+
+.if-login span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  margin-right: 10px; }
+
+.if-login img {
+  max-height: 40px; }
+
+.login img {
+  max-height: 40px; }

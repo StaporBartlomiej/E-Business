@@ -1,8 +1,0 @@
-[debug] Copy resource mappings: 
-[debug] 	(/home/linuxlite/IdeaProjects/e-business/conf/evolutions,/home/linuxlite/IdeaProjects/e-business/target/scala-2.12/classes/evolutions)
-[debug] 	(/home/linuxlite/IdeaProjects/e-business/conf/application.conf,/home/linuxlite/IdeaProjects/e-business/target/scala-2.12/classes/application.conf)
-[debug] 	(/home/linuxlite/IdeaProjects/e-business/conf/messages,/home/linuxlite/IdeaProjects/e-business/target/scala-2.12/classes/messages)
-[debug] 	(/home/linuxlite/IdeaProjects/e-business/conf/routes,/home/linuxlite/IdeaProjects/e-business/target/scala-2.12/classes/routes)
-[debug] 	(/home/linuxlite/IdeaProjects/e-business/conf/logback.xml,/home/linuxlite/IdeaProjects/e-business/target/scala-2.12/classes/logback.xml)
-[debug] 	(/home/linuxlite/IdeaProjects/e-business/conf/evolutions/default,/home/linuxlite/IdeaProjects/e-business/target/scala-2.12/classes/evolutions/default)
-[debug] 	(/home/linuxlite/IdeaProjects/e-business/conf/evolutions/default/1.sql,/home/linuxlite/IdeaProjects/e-business/target/scala-2.12/classes/evolutions/default/1.sql)
